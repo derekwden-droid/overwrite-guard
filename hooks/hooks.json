@@ -1,0 +1,13 @@
+{
+  "description": "Before each Write over an existing file, blocks it when it would delete lines Claude never read or replace them with a placeholder, and asks first when it would replace nearly all of the file.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          { "type": "command", "command": "node", "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/overwrite-guard.mjs"], "timeout": 30 }
+        ]
+      }
+    ]
+  }
+}

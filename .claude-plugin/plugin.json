@@ -1,0 +1,17 @@
+{
+  "name": "overwrite-guard",
+  "displayName": "Overwrite Guard",
+  "version": "1.0.0",
+  "description": "Stops Claude Code's Write tool from silently destroying a file: blocks a Write that would delete lines Claude never read in the conversation, or that replaces real code with a placeholder such as \"// ... existing code ...\", and asks before a Write replaces nearly all of a file.",
+  "author": {
+    "name": "Derek Denmark",
+    "url": "https://github.com/derekwden-droid"
+  },
+  "homepage": "https://github.com/derekwden-droid/overwrite-guard",
+  "repository": "https://github.com/derekwden-droid/overwrite-guard",
+  "license": "MIT",
+  "keywords": ["write", "data-loss", "overwrite", "placeholder", "partial-read", "hooks", "safety"],
+  "documentationUrl": "https://github.com/derekwden-droid/overwrite-guard/blob/main/README.md",
+  "supportUrl": "https://github.com/derekwden-droid/overwrite-guard/issues",
+  "privacyPolicyUrl": "https://github.com/derekwden-droid/overwrite-guard/blob/main/PRIVACY.md"
+}
